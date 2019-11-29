@@ -6,5 +6,4 @@ export default styled(LinearGradient).attrs({
   colors: ['#7159c1', '#ab59c1'],
 })`
   flex: 1;
-  padding: 10px 10px;
 `;
