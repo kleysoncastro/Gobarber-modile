@@ -25,8 +25,8 @@ export function* signIn({ payload }) {
     yield put(sigInSuccess(token, user));
 
     // history.push('/dashboard');
-  } catch (errr) {
-    Alert.alert('Erro', 'Usuario ou senha inválidos');
+  } catch (err) {
+    Alert.alert('Erro', 'Verifique sua conexão');
     yield put(signFailure());
   }
 }
@@ -39,7 +39,6 @@ export function* signUp({ payload }) {
       name,
       email,
       password,
-      provider: true,
     });
 
     // history.push('/');
