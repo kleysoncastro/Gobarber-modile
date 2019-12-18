@@ -43,7 +43,7 @@ export default function SignIn({ navigation }) {
             placeholder="Digite seu email"
             returnKeyType="next"
             onSubmitEditing={() => passwordRef.current.focus()}
-            valeu={email}
+            value={email}
             onChangeText={setEmail}
           />
 
@@ -54,7 +54,7 @@ export default function SignIn({ navigation }) {
             ref={passwordRef}
             returnKeyType="send"
             onSubmitEditing={handleSubmit}
-            valeu={password}
+            value={password}
             onChangeText={setPassword}
           />
 
