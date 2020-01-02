@@ -27,7 +27,11 @@ export default function SelectProvider({ navigation }) {
           data={providers}
           keyExtractor={provider => String(provider.id)}
           renderItem={({ item: provider }) => (
-            <Provider onPress={() => navigation.navigate('SelectDateTime')}>
+            <Provider
+              onPress={() =>
+                navigation.navigate('SelectDateTime', { provider })
+              }
+            >
               <Avatar
                 source={{
                   uri: provider.avatar
