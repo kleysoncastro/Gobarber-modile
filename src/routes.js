@@ -60,6 +60,7 @@ export default (signdIn = false) =>
           },
 
           {
+            resetOnBlur: true,
             tabBarOptions: {
               keyboardHidesTabBar: true,
               style: { backgroundColor: '#8d41a8' },
